@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.bookmanage.mapper.BookMapper">
+    <select id="queryAllBooks" resultType="com.example.bookmanage.entity.Book">
+        SELECT
+            book_id,
+            book_name,
+            book_intro,
+            book_number
+        FROM
+            book
+    </select>
+
+    <select id="queryByBookId" parameterType="long" resultType="com.example.bookmanage.entity.Book">
+        SELECT
+            book_id,
+            book_name,
+            book_intro,
+            book_number
+        FROM
+            book
+        WHERE
+            book_id = #{bookId}
+    </select>
+
+    <select id="getSomeBookList" parameterType="string" resultType="com.example.bookmanage.entity.Book">
+        SELECT
+            book_id,
+            book_name,
+            book_intro,
+            book_number
+        FROM
+            book
+        WHERE
+            book_name like '%' #{bookName} '%'
+    </select>
+
+    <update id="reduceBookNumber">
+        UPDATE book
+        SET book_number = book_number - 1
+        WHERE
+            book_id = #{bookId}
+        AND
+            book_number > 0
+    </update>
+
+    <update id="addBookNumber">
+        UPDATE book
+        SET book_number = book_number + 1
+        WHERE
+            book_id = #{bookId}
+    </update>
+</mapper>

@@ -1,0 +1,7 @@
+com/example/bookmanage/controller/BookController.class
+com/example/bookmanage/BookManageApplication.class
+com/example/bookmanage/mapper/AppointmentMapper.class
+com/example/bookmanage/entity/Appointment.class
+com/example/bookmanage/entity/Book.class
+com/example/bookmanage/service/BookService.class
+com/example/bookmanage/mapper/BookMapper.class
