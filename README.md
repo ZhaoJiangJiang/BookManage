@@ -4,3 +4,17 @@
 4. book/appointBook接口：预约书籍（包括 OUT_OF_STOCK、REPEAT_APPOINT、SYSTEM_ERROR 3种异常处理）
 5. student/validateStudent接口：验证学生登陆密码信息
 6. appointment/queryAppoint接口：通过studengId查询学生的书籍预约信息
+
+
+- 国考：
+  + 2019年 副省级 64.7
+  + 2020年 副省级
+  + 2021年 副省级
+  + 2022年 副省级
+  + 2023年 副省级
+  + 2023年 地级市 71.1
+  + 2023年 行政执法 72.8
+- 省考：
+  + 2019年 A
+  + 2019年 B
+  + 2023年 A
